@@ -6,8 +6,8 @@
             <p>Velvet Pour</p>
         </a>
 
-        <ul v-for="link in navLinks">
-            <li>
+        <ul>
+            <li v-for="link in navLinks" :key="link.id">
                 <a :href="link.id">{{link.title}}</a>
             </li>
         </ul>

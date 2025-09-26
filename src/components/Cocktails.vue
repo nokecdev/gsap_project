@@ -40,20 +40,30 @@
     </section>
 </template>
 
-<script setup>
+<script>
 import { cocktailLists, mockTailLists } from '../constants';
 import { gsap } from 'gsap/all';
 
-const parallaxTimeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: '#cocktails',
-        start: 'top 30%', //The top reaches 30% of the viewport
-        end: 'bottom 80%', //Bottom of the screen reaches 80% of screen
-        scrub: true
+export default {
+    onMounted() {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#cocktails',
+                start: 'top 30%', //The top reaches 30% of the viewport
+                end: 'bottom 80%', //Bottom of the screen reaches 80% of screen
+                scrub: true
+            }
+        }).from("c-left-leaf", {
+            x: -100, y: 100
+        }).from("c-right-leaf", {
+            x: 100, y: 100
+        })
+    },
+    data() {
+        return {
+            cocktailLists,
+            mockTailLists
+        }
     }
-}).from("#c-left-leaf", {
-    x: -100, y: 100
-}).from("#c-right-leaf", {
-    x: 100, y: 100
-})
+}
 </script>

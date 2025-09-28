@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue';
 import Cocktails from './components/Cocktails.vue';
 import About from './components/About.vue';
 import Art from "./components/Art.vue";
+import Menu from "./components/Menu.vue";
 
 </script>
 
@@ -13,6 +14,7 @@ import Art from "./components/Art.vue";
   <Cocktails />
   <About />
   <Art />
+  <Menu />
 </template>
 
 <style scoped>

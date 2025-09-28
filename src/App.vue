@@ -5,6 +5,7 @@ import Cocktails from './components/Cocktails.vue';
 import About from './components/About.vue';
 import Art from "./components/Art.vue";
 import Menu from "./components/Menu.vue";
+import Contact from "./components/Contact.vue";
 
 </script>
 
@@ -15,6 +16,7 @@ import Menu from "./components/Menu.vue";
   <About />
   <Art />
   <Menu />
+  <Contact />
 </template>
 
 <style scoped>

@@ -19,7 +19,7 @@
             </div>
         </nav>
 
-        <div class="content">
+        <div class="">
             <div class="arrows">
                 <button class="text-left"
                     @click="goToSlide(currentIndex - 1)">
